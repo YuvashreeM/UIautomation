@@ -20,9 +20,8 @@ export default class ProductPage {
     }
 
     async clickAuditorsAndSecurity(){
-        await this.page.locator(productSelectors.auditorsAndSecurity).scrollIntoViewIfNeeded().then( async () => {
-            await this.page.locator(productSelectors.auditorsAndSecurity).click();
-        });
+        await this.page.locator(productSelectors.auditorsAndSecurity).scrollIntoViewIfNeeded();
+        await this.page.locator(productSelectors.auditorsAndSecurity).click();
         expect(this.page.locator(productSelectors.auditorsAndSecurityText)).toHaveText(productData.auditorsAndSecurity);
     }
 
