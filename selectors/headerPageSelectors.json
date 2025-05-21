@@ -1,0 +1,4 @@
+{
+    "productLink":"//button[normalize-space(text())='Products']",
+    "resourcesLink":"//button[normalize-space(text())='Resources']"
+}

@@ -1,0 +1,8 @@
+{
+    "documentation": "//a[normalize-space(text())='Documentation']",
+    "title": "//h1[normalize-space(text())='CloudBees Documentation']",
+    "searchResources": "//input[@placeholder='Search all CloudBees Resources']",
+    "search": "//input[@placeholder='Search']",
+    "pagination": "//ul[contains(@class,'pagination pagination-sm')]",
+    "installingInsight":"//div[normalize-space(text())='Installing Insight']"
+}

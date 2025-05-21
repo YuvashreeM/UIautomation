@@ -1,0 +1,7 @@
+{
+    "cdRO": "//a[normalize-space(text())='CloudBees CD/RO']",
+    "costSavings": "(//span[contains(@class,'mb-0 pr-2')])[1]",
+    "auditorsAndSecurity":"//span[normalize-space(text())='Auditors / Security']",
+    "auditorsAndSecurityText":"(//h2[contains(@class,'text-h4 text-mode-primary')])[2]",
+    "releaseGoverence":"(//h4[@data-test='headerContent.title'])[3]"
+}
