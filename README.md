@@ -147,13 +147,17 @@ The playwright.config.ts file is the central configuration file for the Playwrig
 
 Ensure all required dependencies are installed by running the following command:
 
-```npm install```
+```bash
+npm install
+```
 
 ### Step 2: **Execute the Test Suite and Generate the Allure Report**
 Run the Playwright test suite and generate the Allure report in one step using the following command:
 
 
-```npm run allure:full```
+```bash 
+npm run allure:full
+```
 This command is a custom script defined in the package.json file. It performs the following actions:
 
 Runs the Test Suite: Executes all Playwright test cases.
