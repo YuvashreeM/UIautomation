@@ -143,13 +143,13 @@ The playwright.config.ts file is the central configuration file for the Playwrig
 
 ## ▶️ How to Run the Tests
 
-### Step 1: Install Dependencies
+### Step 1: **Install Dependencies**
 
 Ensure all required dependencies are installed by running the following command:
 
 ```npm install```
 
-### Step 2: Execute the Test Suite and Generate the Allure Report
+### Step 2: **Execute the Test Suite and Generate the Allure Report**
 Run the Playwright test suite and generate the Allure report in one step using the following command:
 
 
