@@ -1,7 +1,7 @@
 
 # 🌐 CloudBees Website Automation
 
-This repository, UIautomation, showcases a UI automation framework developed using **TypeScript** and the **Playwright Test Runner**. It is designed to validate critical workflows and UI components on the CloudBees website. The framework ensures reliable and scalable browser automation, while **Allure** reporting is integrated to provide rich, interactive test reports. With support for end-to-end execution and cross-browser validation, this setup offers a modern and maintainable solution for frontend test automation.
+This repository, UIautomation, showcases a UI automation framework developed using **TypeScript** and the **Playwright Test Runner**. It is designed to validate provided assesment workflow of CloudBees website. The framework ensures reliable and scalable browser automation, while **Allure** reporting is integrated to provide rich, interactive test reports. With support for end-to-end execution and cross-browser validation.
 
 ---
 
@@ -147,15 +147,13 @@ The playwright.config.ts file is the central configuration file for the Playwrig
 
 Ensure all required dependencies are installed by running the following command:
 
-```bash
-npm install```
+```npm install```
 
 ### Step 2: Execute the Test Suite and Generate the Allure Report
 Run the Playwright test suite and generate the Allure report in one step using the following command:
 
 
-```npm run allure:full
-```
+```npm run allure:full```
 This command is a custom script defined in the package.json file. It performs the following actions:
 
 Runs the Test Suite: Executes all Playwright test cases.
