@@ -2,9 +2,8 @@ import {test as baseTest} from '@playwright/test';
 import HeaderPage from "../pages/headerPage";
 import ProductPage from "../pages/productPage"; 
 import ResourcesPage from "../pages/resourcesPage";
-// import { test as baseTest } from '../base/setup'; // Import the setup logic
 
-
+// Importing the necessary page classes
 type pages = {
     headerPage: HeaderPage;
     productPage: ProductPage;   
@@ -12,6 +11,7 @@ type pages = {
    
 }
 
+// Creating a test fixture that extends the base test
 const testPages = baseTest.extend<pages>({
     headerPage: async ({page}, use) => {
         await use(new HeaderPage(page));
@@ -25,31 +25,6 @@ const testPages = baseTest.extend<pages>({
 
 })
 
-
-// export const test = baseTest.extend<{
-//     headerPage: HeaderPage;
-//     productPage: ProductPage;
-//     resourcesPage: ResourcesPage;
-// }>({
-//     headerPage: async ({ sharedPage }, use) => {
-//         const headerPage = new HeaderPage(sharedPage); // Initialize HeaderPage with sharedPage
-//         await use(headerPage);
-//     },
-//     productPage: async ({ sharedPage }, use) => {
-//         const productPage = new ProductPage(sharedPage); // Initialize ProductPage with sharedPage
-//         await use(productPage);
-//     },
-//     resourcesPage: async ({ sharedPage }, use) => {
-//         const resourcesPage = new ResourcesPage(sharedPage); // Initialize ResourcesPage with sharedPage
-//         await use(resourcesPage);
-//     },
-// });
-
-// export const expect = test.expect;
-
-
-
-
-
+// Exporting the test fixture for use in test files
 export const test = testPages;
 export const expect = testPages.expect;
